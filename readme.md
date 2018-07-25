@@ -1,9 +1,9 @@
-# [package-name]
+# dom-polyfill
 
 ```bash
-git clone path/to/[package-name].git
+git clone path/to/dom-polyfill.git
 
-cd [package-name]
+cd dom-polyfill
 
 npm install
 ```
