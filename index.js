@@ -1,7 +1,7 @@
 import _ from 'lodash';
 Object.assign(Node.prototype, {
-	on (e, handler) { return _.castArray(e).map(e => this.addEventHandler(e, handler, true)); }, 
-	off(e, handler) { return _.castArray(e).map(e => this.removeEventHandler(e, handler, true)); }, 
+	on (e, handler) { return _.castArray(e).map(e => this.addEventListener(e, handler, true)); }, 
+	off(e, handler) { return _.castArray(e).map(e => this.removeEventListener(e, handler, true)); }, 
 	hittest(x, y)
 	{
 		const { left, top, right, bottom } = this.getBoundingClientRect();
